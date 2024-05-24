@@ -1,0 +1,15 @@
+{
+  "package-id" : "hl7.extensions.template",
+  "title" : "Template for FHIR extension pack",
+  "canonical" : "http://fhir.org/templates/hl7.extensions.template",
+  "introduction" : "Template for FHIR extension pack",
+  "list" : [
+    {
+      "version" : "current",
+      "desc" : "Continuous Integration Build (latest in version control)",
+      "path" : "https://build.fhir.org/ig/HL7/ig-template-extensions",
+      "status" : "ci-build",
+      "current" : true
+    }
+  ]
+}

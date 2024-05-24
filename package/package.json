@@ -1,0 +1,13 @@
+{
+  "name": "hl7.extensions.template",
+  "version": "0.0.1",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Template for extensions Pack",
+  "author": "http://hl7.org/fhir",
+  "canonical": "http://github.com/HL7/ig-template-extensions",
+  "base": "hl7.fhir.template",
+  "dependencies": {
+    "hl7.fhir.template": "current"
+  }
+}
