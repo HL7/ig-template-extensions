@@ -10,6 +10,16 @@
       "path" : "https://build.fhir.org/ig/HL7/ig-template-extensions",
       "status" : "ci-build",
       "current" : true
+    },
+    {
+      "version" : "0.1.0",
+      "path" : "http://fhir.org/templates/hl7.extensions.template/0.1.0",
+      "status" : "release",
+      "sequence" : "Publications",
+      "fhirversion" : "4.0.1",
+      "desc" : "First release",
+      "date" : "2024-05-24",
+      "current" : true
     }
   ]
 }

@@ -16,6 +16,8 @@
 {{site.data.resources[resource_].purpose|markdownify}}
 {% endif %}
 
+{%include StructureDefinition-{{[id]}}-experimental-warning.xhtml%}
+
   <p><b>Context of Use</b></p>
   <p>This extension may be used on the following {{site.data.structuredefinitions['{{[id]}}'].contextType}} element(s):</p>
   <ul>
