@@ -9,5 +9,5 @@
   "dependencies" : {
     "hl7.fhir.template" : "current"
   },
-  "version" : "0.1.0"
+  "version" : "0.1.1"
 }
