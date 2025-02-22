@@ -199,6 +199,9 @@
   {% include StructureDefinition-{{[id]}}-inv.xhtml %}
 {% endunless%}
 
+  <!-- extensions: cross version information -->
+  {%include StructureDefinition-{{[id]}}-other-versions.xhtml%}
+  
   <!-- insert notes if present -->
   {% include fragment-notes.html type='{{[type]}}' id='{{[id]}}' %}
 
