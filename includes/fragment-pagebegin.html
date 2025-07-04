@@ -32,7 +32,7 @@
 {% if isExtension=="Y" and site.data.fhir.path=="http://hl7.org/fhir/R5/" or site.data.fhir.path=="http://build.fhir.org/" %}
 <!-- This content is identical to the header from the R5 build with the following exceptions:
      - Made all necessary hyperlinks refer to site.data.fhir.path
-     - Marked visible hyperlinks as no-external if they were rooted in site.data.fhir.pth
+     - Marked visible hyperlinks as data-no-external if they were rooted in site.data.fhir.pth
 .  If/when the CI build diverges from R5, an elsif clause will need to be added that reflects the changes -->
 <head>
   <title>{{resourceName}} - FHIR v5.0.0-cibuild</title>
@@ -68,17 +68,17 @@
 <body>
 	<div id="segment-header" class="segment">  <!-- segment-header -->	
 		<div class="container">    <!-- container -->
-			<a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="{{site.data.fhir.path}}assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
+			<a data-no-external="true" id="logo" href="http://hl7.org/fhir"><img src="{{site.data.fhir.path}}assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
 			<div id="hl7-status">
 				<b>{{site.data.fhir.ig.title | escape_once}}</b> v{{site.data.fhir.ig.version}} ({{site.data.fhir.genDate | date: "%Y-%m-%d"}})
 			</div>       	
 			
 			<div id="hl7-nav">
-				 <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+				 <a data-no-external="true" id="hl7-logo" href="http://www.hl7.org">
 					<img src="{{site.data.fhir.path}}assets/images/hl7-logo.png" width="54" alt="visit the hl7 website" height="50"/>
 				</a> 
 			</div>       	
-			<div id="hl7-nav"><a no-external="true" id="hl7-logo" href="http://build.fhir.org/search-build.html"><img src="{{site.data.fhir.path}}assets/images/search.png" alt="Search CI-Build FHIR"/></a></div> 
+			<div id="hl7-nav"><a data-no-external="true" id="hl7-logo" href="http://build.fhir.org/search-build.html"><img src="{{site.data.fhir.path}}assets/images/search.png" alt="Search CI-Build FHIR"/></a></div> 
 		</div>
 		<div class="container">    <!-- container -->
 	</div></div>  <!-- /segment-header -->	
@@ -99,25 +99,25 @@
 					<a href="index.html" class="navbar-brand hidden">FHIR</a>
 					<div class="nav-collapse collapse navbar-inverse-collapse">
 						<ul class="nav navbar-nav">
-              <li><a no-external="true" href="{{site.data.fhir.path}}index.html">Home</a></li>
-              <li><a no-external="true" href="{{site.data.fhir.path}}modules.html">Getting Started</a></li>
-              <li><a no-external="true" href="{{site.data.fhir.path}}documentation.html">Documentation</a></li>
-              <li><a no-external="true" href="{{site.data.fhir.path}}datatypes.html">Data Types</a></li>
-              <li><a no-external="true" href="{{site.data.fhir.path}}resourcelist.html"><b><i>Resource Types</i></b></a></li>
-              <li><a no-external="true" href="{{site.data.fhir.path}}terminologies-systems.html">Terminologies</a></li>
+              <li><a data-no-external="true" href="{{site.data.fhir.path}}index.html">Home</a></li>
+              <li><a data-no-external="true" href="{{site.data.fhir.path}}modules.html">Getting Started</a></li>
+              <li><a data-no-external="true" href="{{site.data.fhir.path}}documentation.html">Documentation</a></li>
+              <li><a data-no-external="true" href="{{site.data.fhir.path}}datatypes.html">Data Types</a></li>
+              <li><a data-no-external="true" href="{{site.data.fhir.path}}resourcelist.html"><b><i>Resource Types</i></b></a></li>
+              <li><a data-no-external="true" href="{{site.data.fhir.path}}terminologies-systems.html">Terminologies</a></li>
               <li class="dropdown">
                 <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a no-external="true" href="extension-registry.html">Extensions</a></li>
-                  <li><a no-external="true" href="{{site.data.fhir.path}}operationslist.html">Operations</a></li>
-                  <li><a no-external="true" href="{{site.data.fhir.path}}patterns.html">Patterns</a></li>
-                  <li><a no-external="true" href="{{site.data.fhir.path}}profilelist.html">Profiles</a></li>
-                  <li><a no-external="true" href="{{site.data.fhir.path}}searchparameter-registry.html">Search Parameters</a></li>
+                  <li><a data-no-external="true" href="extension-registry.html">Extensions</a></li>
+                  <li><a data-no-external="true" href="{{site.data.fhir.path}}operationslist.html">Operations</a></li>
+                  <li><a data-no-external="true" href="{{site.data.fhir.path}}patterns.html">Patterns</a></li>
+                  <li><a data-no-external="true" href="{{site.data.fhir.path}}profilelist.html">Profiles</a></li>
+                  <li><a data-no-external="true" href="{{site.data.fhir.path}}searchparameter-registry.html">Search Parameters</a></li>
 				  <li class="divider"></li>
-                  <li><a no-external="true" href="http://registry.fhir.org" target="_blank">Artifact Registry <img src="external.png" alt="icon" style="vertical-align: baseline"/></a></li>
+                  <li><a data-no-external="true" href="http://registry.fhir.org" target="_blank">Artifact Registry <img src="external.png" alt="icon" style="vertical-align: baseline"/></a></li>
                 </ul>    
               </li>
-              <li><a no-external="true" href="http://fhir.org/guides/registry" target="_blank">Implementation Guides <img src="external.png" alt="icon" style="vertical-align: baseline"/></a></li>
+              <li><a data-no-external="true" href="http://fhir.org/guides/registry" target="_blank">Implementation Guides <img src="external.png" alt="icon" style="vertical-align: baseline"/></a></li>
 						</ul>
 					</div>  <!-- /.nav-collapse -->
 				</div>  <!-- /.container -->
@@ -130,18 +130,18 @@
 	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
 		<div class="container">  <!-- container -->	
 			<ul class="breadcrumb">
-        <li><a no-external="true" href="{{site.data.fhir.path}}{{modulePath}}"><img src="{{site.data.fhir.path}}{{moduleImage}}" alt="link"/> {{moduleName}}</a></li>
+        <li><a data-no-external="true" href="{{site.data.fhir.path}}{{modulePath}}"><img src="{{site.data.fhir.path}}{{moduleImage}}" alt="link"/> {{moduleName}}</a></li>
         {% if site.data.modules.resources[resourceName].inDoc=="Y" %}
-          <li><a no-external="true" href="{{site.data.fhir.path}}documentation.html">Documentation Index</a></li>
+          <li><a data-no-external="true" href="{{site.data.fhir.path}}documentation.html">Documentation Index</a></li>
         {% endif %}
         {% if site.data.modules.resources[resourceName].inDt=="Y" %}
-          <li><a no-external="true" href="{{site.data.fhir.path}}datatypes.html">Datatypes</a></li>
+          <li><a data-no-external="true" href="{{site.data.fhir.path}}datatypes.html">Datatypes</a></li>
         {% endif %}
         {% if site.data.modules.resources[resourceName].inFt=="Y" %}
-          <li><a no-external="true" href="{{site.data.fhir.path}}types.html">Type Framework</a></li>
+          <li><a data-no-external="true" href="{{site.data.fhir.path}}types.html">Type Framework</a></li>
         {% endif %}
         {% if prefix11=="extensions-" %}
-          <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">
+          <li><a data-no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">
             {%if site.data.modules.resource[resourceName].tab %}
               {{site.data.modules.resource[resourceName].tab}}
             {% else %}
@@ -151,9 +151,9 @@
           <li><b>Extensions</b></li>
         {% elsif prefix12=="conversions-" %}
           {%if resourceName=="Extension" %}
-            <li><a no-external="true" href="{{site.data.fhir.path}}extensibility.html">Extensibility</a></li>
+            <li><a data-no-external="true" href="{{site.data.fhir.path}}extensibility.html">Extensibility</a></li>
           {% else %}
-            <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">
+            <li><a data-no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">
             {%if site.data.modules.resource[resourceName].tab %}
               {{site.data.modules.resource[resourceName].tab}}
             {% else %}
