@@ -26,6 +26,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     {% include fragment-pageTable.html %}
   {% endif %}
   {% assign path = page.path | split: '.html' %}
+  
+  {% if page.path == 'toc.html' %}
+  <div>NOTE: The section numbers in this table of contents are auto-generated based on the hierarchy of pages in the guide.  However, to maintain the illusion that extension pages are 'part' of the core specification, the section numbers that appear on pages associated with resources will differ from those appearing in this table of contents and will instead align with the section numbers of the resource in question.  This discrepency is intentional.  We considered having those section numbers appear in the table of contents, but they would be an un-ordered mess and would create even more confusion.</div>
+  {% endif %}
   {% include {{path}}.xml %}
 </div>
 {% include fragment-pageend.html %}
