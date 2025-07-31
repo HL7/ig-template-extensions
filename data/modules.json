@@ -66,6 +66,14 @@
       "module": "Foundation",
       "section": "2.19"
     },
+    "extension-summary": {
+      "module": "Foundation",
+      "section": "2.20"
+    },
+    "deprecated": {
+      "module": "Foundation",
+      "section": "2.21"
+    },
     "references": {
       "module": "Foundation",
       "section": "2.1.3.3",
