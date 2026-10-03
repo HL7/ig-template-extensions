@@ -115,13 +115,13 @@ body {
 #logo img {
   max-width: 100%;
 }
-#hl7-nav {
+#hl7-nav, #hl7-search-nav {
   line-height: 50px;
   float: right;
   margin-top: 16px;
   color: #808080;
 }
-#hl7-nav a {
+#hl7-nav a, #hl7-search-nav a {
   color: inherit;
 }
 #hl7-status {
@@ -139,7 +139,7 @@ body {
 #hl7-search a {
   color: inherit;
 }
-#hl7-logo {
+#hl7-logo, #hl7-search-logo {
   float: right;
   margin-left: 6px;
   margin-right: 6px;
